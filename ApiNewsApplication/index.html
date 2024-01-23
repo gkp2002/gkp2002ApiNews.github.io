@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GajananNews.com</title>
+    <link rel="stylesheet" href="ApiNews.css">
+</head>
+<body>
+    <nav>
+<div class="main-nav container flex">
+    <a href="#" onclick="Reload()" class="company-logo"><img src="./Assest/Gajnaan.png" alt="company-logo"></a>
+    <div class="nav-links">
+        <ul class="flex">
+            <li class="hover-link nav-item" id="ipl" onclick="onNavClick('ipl')">IPL</li>
+            <li class="hover-link nav-item" id="Finance" onclick="onNavClick('Finance')">Finance</li>
+            <li class="hover-link nav-item" id="Politics" onclick="onNavClick('Politics')">Politics</li>
+        </ul>
+    </div>
+    <div class="search-bar flex">
+        <input type="text" class="news-input" placeholder="e.g. Ayodhya" id="Search-text">
+        <button class="search-button" id="search-button">Search</button>
+    </div>
+</div>
+
+    </nav>
+    <main>
+        <div class="cards-container container flex" id="cards-container">
+
+
+   
+
+        </div>
+    </main>
+    <template id="template-news-card">
+        <div class="card">
+            <div class="card-header">
+                <img src="https://via.placeholder.com/400x200" alt="newsImage" id="news-img">
+            </div>
+            <div class="card-containt">
+                <h3 id="news-title">this is the title</h3>
+                <h6 class="news-source " id="news-source">End gadget 26/28/2023</h6>
+                <p class="news-desc" id="news-desc">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Id temporibus expedita, architecto ipsam adipisci eligendi?
+                    Blanditiis iusto dignissimos repudiandae rerum fuga optio
+                </p>
+            </div>
+          
+        </div>
+    </template>
+    <script src="ApiNews.js"></script>
+</body>
+</html>
